@@ -1,0 +1,31 @@
+/* Modern Select Dropdown Styling */
+select option {
+    padding: 12px 16px;
+    background-color: white;
+    color: #374151;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+select option:hover {
+    background-color: #EFF6FF;
+    color: #2563EB;
+}
+
+select option:checked {
+    background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    color: white;
+    font-weight: 600;
+}
+
+select option:disabled {
+    color: #9CA3AF;
+    background-color: #F3F4F6;
+}
+
+/* Firefox specific */
+@-moz-document url-prefix() {
+    select option {
+        padding: 8px 12px;
+    }
+}
